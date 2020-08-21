@@ -1,6 +1,6 @@
 # How to run
 
-1. Paste in google_credentials with DF admin role access into google_credentials.json in the root
+1. Paste in Google credentials with DF admin role access into google_credentials.json in the root
 2. `npm install`
 3. `npm start`
 
