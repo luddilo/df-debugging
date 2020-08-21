@@ -10,7 +10,6 @@ The script will remove all intents and entities in the agent, recreate them, tra
 
 1. Empty response:
 
-```json
 {
   fulfillmentMessages: [],
   outputContexts: [],
@@ -28,7 +27,6 @@ The script will remove all intents and entities in the agent, recreate them, tra
   languageCode: 'en',
   sentimentAnalysisResult: null
 }
-```
 
 2. Error:
 
