@@ -1,0 +1,39 @@
+[
+  {
+    "displayName": "quantifiedFruit",
+    "enableFuzzyExtraction": false,
+    "autoExpansionMode": "AUTO_EXPANSION_MODE_UNSPECIFIED",
+    "type": "COMPOSITE",
+    "entities": [
+      {
+        "value": "@sys.number-integer:quantity @fruit:fruit",
+        "synonyms": [
+          "@sys.number-integer:quantity @fruit:fruit"
+        ]
+      }
+    ],
+    "kind": "KIND_LIST"
+  },
+  {
+    "displayName": "fruit",
+    "enableFuzzyExtraction": false,
+    "autoExpansionMode": "AUTO_EXPANSION_MODE_UNSPECIFIED",
+    "type": "ENUM",
+    "entities": [
+      {
+        "value": "banana",
+        "synonyms": [
+          "banana"
+        ]
+      },
+      {
+        "value": "apple",
+        "synonyms": [
+          "apples",
+          "apple"
+        ]
+      }
+    ],
+    "kind": "KIND_MAP"
+  }
+]

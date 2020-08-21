@@ -1,0 +1,4003 @@
+[
+  {
+    "displayName": "x AliveCheck f3fc8a64-b1b5-48da-b487-f4007dc87e9b",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "alive check"
+          }
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "text": {
+          "text": [
+            "ALIVE"
+          ]
+        }
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "Unspecified",
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/aliveCheck"
+    ]
+  },
+  {
+    "displayName": "n-0 Hi there! 206fe79a-ad10-4abf-9517-16f4f5291fa5",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "welcome"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "init"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "start"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "restart"
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [
+      "n-0",
+      "WELCOME"
+    ],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING"
+  },
+  {
+    "displayName": "n-1 Do you want to book a flight? aa6cda28-f395-459a-b6f3-54dd6012b863",
+    "trainingPhrases": [],
+    "isFallback": false,
+    "events": [
+      "n-1"
+    ],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING"
+  },
+  {
+    "displayName": "n-1-u travel 549636f6-7848-4495-bb12-8f0affae6d93",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to book a flight"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to book tickets"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " for "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "book a flight"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "book tickets to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "book "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " tickets to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "book tickets to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "book "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " tickets to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "going to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "going from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " people going from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to book "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " tickets to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to book "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " tickets from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to fly from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " for "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " people"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to fly from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to fly to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " for "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " people"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to fly to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to fly to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to fly from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I wanna fly to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I wanna fly from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I wanna fly to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "fly to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "fly from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I wanna go to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " tickets to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "parameters": [
+      {
+        "name": "33d43ca2-61f3-452b-ab90-b535148d4eec",
+        "displayName": "tickets",
+        "value": "$tickets",
+        "entityTypeDisplayName": "@sys.number-integer",
+        "isList": false,
+        "mandatory": false
+      },
+      {
+        "name": "c7a39e34-867b-4e8d-97a8-19f9fc5f6ee4",
+        "displayName": "fromCity",
+        "value": "$fromCity",
+        "entityTypeDisplayName": "@sys.geo-city",
+        "isList": false,
+        "mandatory": false
+      },
+      {
+        "name": "839c1432-bc4e-45ca-a620-a280eb777650",
+        "displayName": "toCity",
+        "value": "$toCity",
+        "entityTypeDisplayName": "@sys.geo-city",
+        "isList": false,
+        "mandatory": false
+      }
+    ],
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-1-u"
+    ]
+  },
+  {
+    "displayName": "n-1-u Yes 0e10499c-5fbf-4d02-948c-18f679d9e879",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "yeah"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "yes"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "of course"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "absolutely"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "yep"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "it does"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "yea"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "sure"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "yup"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "great"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "It is ok"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "OK"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "sure"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "alright"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "all good"
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-1-u"
+    ]
+  },
+  {
+    "displayName": "n-1-u No 3f0b853f-ccda-4cf1-a0e5-7bc08c32f18e",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "no"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "never"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "nope"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I don't think so"
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-1-u"
+    ]
+  },
+  {
+    "displayName": "n-1-u [Fallback] aa291ef9-2011-4848-98fe-69da93a8c900",
+    "trainingPhrases": [],
+    "isFallback": true,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-1-u"
+    ]
+  },
+  {
+    "displayName": "n-2 Where do you wanna go to? 8793607e-7f8c-4217-a08c-3ea1d25c46f3",
+    "trainingPhrases": [],
+    "isFallback": false,
+    "events": [
+      "n-2",
+      "toCity"
+    ],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING"
+  },
+  {
+    "displayName": "n-2-u travelTo f85bb830-20d3-4cf3-93eb-763f7def40bc",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to go to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to fly to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "no to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "no, going to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "parameters": [
+      {
+        "name": "833d834a-8f75-4e10-aa8c-fafa06652aaf",
+        "displayName": "city",
+        "value": "$city",
+        "entityTypeDisplayName": "@sys.geo-city",
+        "isList": false,
+        "mandatory": true
+      }
+    ],
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-2-u"
+    ]
+  },
+  {
+    "displayName": "n-2-u city 84950b56-329d-49f3-98df-cc22ae0231a3",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "parameters": [
+      {
+        "name": "9a80345a-951c-4ec6-85f4-4472eee9f6a3",
+        "displayName": "city",
+        "value": "$city",
+        "entityTypeDisplayName": "@sys.geo-city",
+        "isList": false,
+        "mandatory": true
+      }
+    ],
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-2-u"
+    ]
+  },
+  {
+    "displayName": "n-2-u [Fallback] 3732ca58-4c34-4ddf-9e74-d0b0103de89e",
+    "trainingPhrases": [],
+    "isFallback": true,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-2-u"
+    ]
+  },
+  {
+    "displayName": "n-3 Where do you wanna go from? 4523be10-eaaf-4a30-a479-80a1ea8580b0",
+    "trainingPhrases": [],
+    "isFallback": false,
+    "events": [
+      "n-3"
+    ],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING"
+  },
+  {
+    "displayName": "n-3-u travelFrom 4b499bfd-ea41-481a-b1ff-1ece03107195",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to go from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to fly from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "no from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "no, going from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "we are flying to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "parameters": [
+      {
+        "name": "2bb802e9-3198-44e1-8b09-2a6c46bd0278",
+        "displayName": "city",
+        "value": "$city",
+        "entityTypeDisplayName": "@sys.geo-city",
+        "isList": false,
+        "mandatory": true
+      }
+    ],
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-3-u"
+    ]
+  },
+  {
+    "displayName": "n-3-u city c875482f-b99b-44b4-8d1f-9051418b87b0",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "parameters": [
+      {
+        "name": "793f2c36-8f4a-48fe-94b5-a12e87f85497",
+        "displayName": "city",
+        "value": "$city",
+        "entityTypeDisplayName": "@sys.geo-city",
+        "isList": false,
+        "mandatory": true
+      }
+    ],
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-3-u"
+    ]
+  },
+  {
+    "displayName": "n-3-u [Fallback] 7fda6615-be95-4559-99c6-041d57ebbb70",
+    "trainingPhrases": [],
+    "isFallback": true,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-3-u"
+    ]
+  },
+  {
+    "displayName": "n-4 How many people are travelling? 30745021-98e3-4305-8171-0cf577fae926",
+    "trainingPhrases": [],
+    "isFallback": false,
+    "events": [
+      "n-4",
+      "askTickets"
+    ],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING"
+  },
+  {
+    "displayName": "n-4-u peopleTravelling 4fd24f33-978d-4af0-a5c4-681b935cb78d",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " people"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " tickets"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "we are "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "we aer "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "no we are "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "no "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "parameters": [
+      {
+        "name": "eeaa7768-20a9-47f8-893c-995d85b68f5b",
+        "displayName": "tickets",
+        "value": "$tickets",
+        "entityTypeDisplayName": "@sys.number-integer",
+        "isList": false,
+        "mandatory": true
+      }
+    ],
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-4-u"
+    ]
+  },
+  {
+    "displayName": "n-4-u [Fallback] 003168e9-18f7-46a4-8fa9-c32d157d8344",
+    "trainingPhrases": [],
+    "isFallback": true,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-4-u"
+    ]
+  },
+  {
+    "displayName": "n-5 A flight from _fromCity to _toCity for _tickets people soun 921656f4-ac46-40d3-86c9-ab0d89b86975",
+    "trainingPhrases": [],
+    "isFallback": false,
+    "events": [
+      "n-5"
+    ],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING"
+  },
+  {
+    "displayName": "n-5-u travelFrom d154c0fd-f97b-4c60-8a60-4b823f9c7d64",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to go from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to fly from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "no from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "no, going from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "we are flying to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "parameters": [
+      {
+        "name": "39194989-cc98-4e4a-b0fa-78b7a01d7bd3",
+        "displayName": "city",
+        "value": "$city",
+        "entityTypeDisplayName": "@sys.geo-city",
+        "isList": false,
+        "mandatory": true
+      }
+    ],
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-5-u"
+    ]
+  },
+  {
+    "displayName": "n-5-u travelTo b4ec307e-bca6-4383-93ac-b1423bf7f714",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to go to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to fly to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "no to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "no, going to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "parameters": [
+      {
+        "name": "cc37a8ac-2078-4131-be39-78858be8614c",
+        "displayName": "city",
+        "value": "$city",
+        "entityTypeDisplayName": "@sys.geo-city",
+        "isList": false,
+        "mandatory": true
+      }
+    ],
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-5-u"
+    ]
+  },
+  {
+    "displayName": "n-5-u peopleTravelling e60f0731-4c76-41c2-b3eb-f5cd6bc88e9d",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " people"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " tickets"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "we are "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "we aer "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "no we are "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "no "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "parameters": [
+      {
+        "name": "e99b69bd-dbc0-49c4-a8a4-46aa215b8928",
+        "displayName": "tickets",
+        "value": "$tickets",
+        "entityTypeDisplayName": "@sys.number-integer",
+        "isList": false,
+        "mandatory": true
+      }
+    ],
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-5-u"
+    ]
+  },
+  {
+    "displayName": "n-5-u changeBooking 2128fbd2-0989-450b-826c-93aa60a78df8",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "No"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "It is not good"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "wrong"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "change mind"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to change"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I made a mistake"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I wrote wrong"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "not really"
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-5-u"
+    ]
+  },
+  {
+    "displayName": "n-5-u4-0-u __TRANSACTION_CONFIRMED 52eb0dd6-3720-468f-8deb-9ac517b60716",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "CONFIRMED"
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [
+      "actions_intent_TRANSACTION_DECISION"
+    ],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-5-u4-0-u"
+    ]
+  },
+  {
+    "displayName": "n-5-u4-0-u __TRANSACTION_DECLINED a0b7e250-3a04-4b43-ae4e-933b62eab57e",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "DECLINED"
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-5-u4-0-u"
+    ]
+  },
+  {
+    "displayName": "n-5-u4-0-u [Default fallback] 693b4279-78a8-426a-bb9e-4cffaf05b5ba",
+    "trainingPhrases": [],
+    "isFallback": true,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-5-u4-0-u"
+    ]
+  },
+  {
+    "displayName": "n-5-u Yes e348c4dc-d244-4254-8a2a-3ed21b883a7c",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "yeah"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "yes"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "of course"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "absolutely"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "yep"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "it does"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "yea"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "sure"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "yup"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "great"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "It is ok"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "OK"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "sure"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "alright"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "all good"
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-5-u"
+    ]
+  },
+  {
+    "displayName": "n-5-u Abort fbdcf230-a2e5-45ee-9149-601436a0d463",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "Abort"
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-5-u"
+    ]
+  },
+  {
+    "displayName": "n-5-u [Fallback] 0b203229-4beb-443a-9c8c-390ec52051f6",
+    "trainingPhrases": [],
+    "isFallback": true,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-5-u"
+    ]
+  },
+  {
+    "displayName": "n-6 Do you want to try to make another booking with me? 523c7fb4-276f-447a-92ea-87a3738c40c1",
+    "trainingPhrases": [],
+    "isFallback": false,
+    "events": [
+      "n-6"
+    ],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING"
+  },
+  {
+    "displayName": "n-6-u travel 850db195-0181-4e45-acab-893fae9b14af",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to book a flight"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to book tickets"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " for "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "book a flight"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "book tickets to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "book "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " tickets to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "book tickets to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "book "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " tickets to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "going to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "going from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " people going from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to book "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " tickets to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to book "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " tickets from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to fly from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " for "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " people"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to fly from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to fly to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " for "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " people"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to fly to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to fly to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to fly from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I wanna fly to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I wanna fly from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I wanna fly to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "fly to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "fly from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I wanna go to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " tickets to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "parameters": [
+      {
+        "name": "f78b8ce6-469e-421d-bd5c-ef13cdc75437",
+        "displayName": "tickets",
+        "value": "$tickets",
+        "entityTypeDisplayName": "@sys.number-integer",
+        "isList": false,
+        "mandatory": false
+      },
+      {
+        "name": "12ef40fe-bfe9-4169-b1c0-268cba10e345",
+        "displayName": "fromCity",
+        "value": "$fromCity",
+        "entityTypeDisplayName": "@sys.geo-city",
+        "isList": false,
+        "mandatory": false
+      },
+      {
+        "name": "39b6af08-b751-4ed3-a30c-bfa03d56f463",
+        "displayName": "toCity",
+        "value": "$toCity",
+        "entityTypeDisplayName": "@sys.geo-city",
+        "isList": false,
+        "mandatory": false
+      }
+    ],
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-6-u"
+    ]
+  },
+  {
+    "displayName": "n-6-u Yes 6b0beab9-d7e6-4e43-b9db-4ac0c5fa4e99",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "yeah"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "yes"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "of course"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "absolutely"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "yep"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "it does"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "yea"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "sure"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "yup"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "great"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "It is ok"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "OK"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "sure"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "alright"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "all good"
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-6-u"
+    ]
+  },
+  {
+    "displayName": "n-6-u No c2d25d8c-0cf9-46c8-b3bd-ac61cb62b620",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "no"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "never"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "nope"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I don't think so"
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-6-u"
+    ]
+  },
+  {
+    "displayName": "n-6-u [Fallback] 2272297e-3b10-4533-8ebc-3f507cb165ca",
+    "trainingPhrases": [],
+    "isFallback": true,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "inputContextNames": [
+      "projects/flightbooker-jxrlts/agent/sessions/-/contexts/n-6-u"
+    ]
+  },
+  {
+    "displayName": "n-7 I hope you have a great flight! 027f2573-a6bd-4c37-9ed1-b8bc8e511ab7",
+    "trainingPhrases": [],
+    "isFallback": false,
+    "events": [
+      "n-7"
+    ],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING"
+  },
+  {
+    "displayName": "n-8 Hope to see you again. Bye! 32f65f0e-43c3-4676-9820-89a7ae3000dd",
+    "trainingPhrases": [],
+    "isFallback": false,
+    "events": [
+      "n-8"
+    ],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING"
+  },
+  {
+    "displayName": "u travel c4d31739-daef-4850-b18f-1da0217e8ce7",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to book a flight"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to book tickets"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " for "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "book a flight"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "book tickets to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "book "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " tickets to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "book tickets to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "book "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " tickets to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "going to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "going from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " people going from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to book "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " tickets to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to book "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " tickets from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to fly from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " for "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " people"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to fly from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to fly to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " for "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " people"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to fly to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to fly to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want to fly from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I wanna fly to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I wanna fly from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I wanna fly to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "fly to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          },
+          {
+            "text": " from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "fly from "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "fromCity",
+            "userDefined": true
+          },
+          {
+            "text": " to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I wanna go to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I want "
+          },
+          {
+            "text": "12",
+            "entityType": "@sys.number-integer",
+            "alias": "tickets",
+            "userDefined": true
+          },
+          {
+            "text": " tickets to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "toCity",
+            "userDefined": true
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "parameters": [
+      {
+        "name": "54018134-685f-42ab-a94e-297d4b45de23",
+        "displayName": "tickets",
+        "value": "$tickets",
+        "entityTypeDisplayName": "@sys.number-integer",
+        "isList": false,
+        "mandatory": false
+      },
+      {
+        "name": "ac3b62ae-f901-41df-b674-8b7dd8a46a80",
+        "displayName": "fromCity",
+        "value": "$fromCity",
+        "entityTypeDisplayName": "@sys.geo-city",
+        "isList": false,
+        "mandatory": false
+      },
+      {
+        "name": "a4a7cef8-be1e-470f-8efa-f2b86d122d76",
+        "displayName": "toCity",
+        "value": "$toCity",
+        "entityTypeDisplayName": "@sys.geo-city",
+        "isList": false,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "displayName": "u What can I do d351b584-ad1d-461b-aff7-00f44b6a7e69",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "What can I do"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "what can you help with"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "what can you do"
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING"
+  },
+  {
+    "displayName": "u costQuery 86f09395-1863-4107-b11e-2b1d5eaecb4c",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "what does it cost"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "what is the price"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "what does the flight cost"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "what does it cost to fly to "
+          },
+          {
+            "text": "United States",
+            "entityType": "@sys.geo-country",
+            "alias": "country",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "what does it cost to fly to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "what does it cost to fly to "
+          },
+          {
+            "text": "Heathrow Airport",
+            "entityType": "@sys.airport",
+            "alias": "airport",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "how much is it to fly to "
+          },
+          {
+            "text": "United States",
+            "entityType": "@sys.geo-country",
+            "alias": "country",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "how much is it to fly to "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "city",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "how much is it to fly to "
+          },
+          {
+            "text": "Heathrow Airport",
+            "entityType": "@sys.airport",
+            "alias": "airport",
+            "userDefined": true
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "parameters": [
+      {
+        "name": "9c1feb71-b350-4569-bad3-6596bf3d8cef",
+        "displayName": "city",
+        "value": "$city",
+        "entityTypeDisplayName": "@sys.geo-city",
+        "isList": false,
+        "mandatory": false
+      },
+      {
+        "name": "bc310063-9e69-4f66-8742-808ef7320cdb",
+        "displayName": "country",
+        "value": "$country",
+        "entityTypeDisplayName": "@sys.geo-country",
+        "isList": false,
+        "mandatory": false
+      },
+      {
+        "name": "b7bae5a8-8def-448b-9c38-328b3ffd5418",
+        "displayName": "airport",
+        "value": "$airport",
+        "entityTypeDisplayName": "@sys.airport",
+        "isList": false,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "displayName": "u weatherQuery 6200cd9b-48ae-488b-9af6-b581f9dcd8a7",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "how is the weather there?"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "how is the weather in "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "weatherCity",
+            "userDefined": true
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "what is the weather in "
+          },
+          {
+            "text": "New York",
+            "entityType": "@sys.geo-city",
+            "alias": "weatherCity",
+            "userDefined": true
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING",
+    "parameters": [
+      {
+        "name": "2d0a2561-ee84-4cc8-a4a6-5e7abbac9165",
+        "displayName": "weatherCity",
+        "value": "$weatherCity",
+        "entityTypeDisplayName": "@sys.geo-city",
+        "isList": false,
+        "mandatory": false
+      }
+    ]
+  },
+  {
+    "displayName": "u exit 8f9c935e-ac40-4665-a3a4-37eb5cde5203",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "exit"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "stop"
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING"
+  },
+  {
+    "displayName": "u greeting 2ca4b8b2-69df-4988-925e-09f3eac424ac",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "hello"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "hi"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "hey"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "what's up"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "hej"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "hallå"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "hiya"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "yello"
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING"
+  },
+  {
+    "displayName": "u help 63395043-1b06-4378-893a-daebddce57ad",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "I don't know"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "idk"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "you tell me"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "About that I can ask"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "What can I ask"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "dunno"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "tell me what you can do"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "can you help"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "what can you do"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "what are you able to help with"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "how do i book a flight"
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING"
+  },
+  {
+    "displayName": "u askQuestion 60593a29-f0dd-488d-a159-35132ab4ca09",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "can i ask you something"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "can i ask a question"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "i have a question"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "i am wondering something"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "can you tell me something"
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING"
+  },
+  {
+    "displayName": "u [queryRepeat] c7cb86ef-0f08-4f0b-998f-2c3fdf108d86",
+    "trainingPhrases": [
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "what did you say"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "can you repeat"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "what was that"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "sorry"
+          }
+        ]
+      },
+      {
+        "type": "EXAMPLE",
+        "parts": [
+          {
+            "text": "again please"
+          }
+        ]
+      }
+    ],
+    "isFallback": false,
+    "events": [],
+    "webhookState": "WEBHOOK_STATE_ENABLED_FOR_SLOT_FILLING"
+  }
+]
